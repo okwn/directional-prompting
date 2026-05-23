@@ -8,6 +8,29 @@ A two-layer skill for writing prompts, agent directives, skill descriptions, sla
 
 Same `SKILL.md`, same trigger surface, same outcome. Drop it into `~/.claude/skills/directional-prompting/` and `~/.codex/skills/directional-prompting/` and both agents pick it up natively.
 
+## Quick Start
+
+```bash
+# Install for Claude Code
+/plugin marketplace add kingbootoshi/directional-prompting
+/plugin install directional-prompting
+
+# Install for Codex CLI
+mkdir -p ~/.codex/skills
+ln -sfn ~/.directional-prompting/plugins/directional-prompting/skills/directional-prompting \
+  ~/.codex/skills/directional-prompting
+
+# Clone once, symlink to both
+git clone https://github.com/kingbootoshi/directional-prompting.git ~/.directional-prompting
+ln -sfn ~/.directional-prompting/plugins/directional-prompting/skills/directional-prompting ~/.claude/skills/
+ln -sfn ~/.directional-prompting/plugins/directional-prompting/skills/directional-prompting ~/.codex/skills/
+```
+
+After install, the skill auto-triggers on prompt-authoring language ("write a prompt", "improve this prompt", "audit this system prompt", etc.). Invoke explicitly with:
+
+- Claude Code: `/directional-prompting`
+- Codex CLI: `use directional prompting on this`
+
 ## The two layers
 
 **Layer 1 — Outcome.** Every non-trivial prompt opens with a block that names the destination: the goal, what "done" looks like, when to stop, the true invariants. This is the frame.
