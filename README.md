@@ -165,3 +165,6 @@ The `agents/openai.yaml` sidecar is Codex-specific UI metadata. Other agents ign
 ## License
 
 MIT.
+
+## Contributing
+PRs welcome!
