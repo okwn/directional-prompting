@@ -162,6 +162,10 @@ Built against the open [Agent Skills](https://developers.openai.com/codex/skills
 
 The `agents/openai.yaml` sidecar is Codex-specific UI metadata. Other agents ignore it.
 
+## Contributing
+
+We welcome contributions! Please feel free to submit a Pull Request or open an issue for bug reports and feature suggestions.
+
 ## License
 
 MIT.
