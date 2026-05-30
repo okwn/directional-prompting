@@ -172,3 +172,6 @@ PRs welcome!
 ## Contributing
 
 PRs welcome!
+
+<!-- Contributor: Arvuno - documentation update -->
+
